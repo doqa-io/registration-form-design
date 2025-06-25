@@ -2,7 +2,7 @@ body {
   width: 100%;
   height: 100vh;
   margin: 0;
-  background-color:#1b1b32;
+  background-color: #1b1b32;
   color: #f5f6f7;
   font-family: Tahoma;
   font-size: 16px;
@@ -14,10 +14,11 @@ h1, p {
 }
 
 form {
-  margin: 0 auto;
+  width: 60vw;
   max-width: 500px;
   min-width: 300px;
-  width: 60vw;
+  margin: 0 auto;
+  padding-bottom: 2em;
 }
 
 fieldset {
@@ -26,20 +27,20 @@ fieldset {
   border-bottom: 3px solid #3b3b4f;
 }
 
-.inline {
-  width: unset;
-  margin: 0 0.5em 0 0;
-  vertical-align: middle;
-}
-
 fieldset:last-of-type {
   border-bottom: none;
 }
 
-input, textarea, select {
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
   width: 100%;
-  box-sizing: border-box;
-  margin: 10px 0 0 0;  
   min-height: 2em;
 }
 
@@ -49,15 +50,27 @@ input, textarea {
   color: #ffffff;
 }
 
-label {
-  display: block;
-  margin: 0.5rem 0;
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
 }
 
 input[type="submit"] {
   display: block;
   width: 60%;
-  margin: 0 auto;
+  margin: 1em auto;
   height: 2em;
-  font-size: 1.1rem;  
+  font-size: 1.1rem;
+  background-color: #3b3b4f;
+  border-color: white;
+  min-width: 300px;
+}
+
+input[type="file"] {
+  padding: 1px 2px;
+}
+
+a {
+  color: #dfdfe2;
 }
